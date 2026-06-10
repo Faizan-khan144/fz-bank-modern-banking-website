@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FZ BANK</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#fffaf5;
+color:#222;
+}
+
+nav{
+height:90px;
+background:#ff6b00;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 8%;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+letter-spacing:4px;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+nav ul li{
+color:white;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:0 8%;
+background:linear-gradient(135deg,#ff6b00,#ff9d4d);
+}
+
+.hero-content{
+max-width:900px;
+text-align:center;
+color:white;
+}
+
+.hero-content h1{
+font-size:64px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:21px;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.hero-content button{
+padding:18px 40px;
+border:none;
+border-radius:10px;
+background:white;
+color:#ff6b00;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+}
+
+.section{
+padding:120px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:70px;
+color:#ff6b00;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-bottom:80px;
+}
+
+.stat-box{
+background:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.stat-box h3{
+font-size:42px;
+color:#ff6b00;
+margin-bottom:10px;
+}
+
+.stat-box p{
+font-size:17px;
+}
+
+.balance-card{
+background:white;
+padding:60px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+margin-bottom:40px;
+}
+
+.balance-card h2{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.balance{
+font-size:70px;
+font-weight:800;
+color:#ff6b00;
+}
+
+.actions{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:16px;
+font-size:18px;
+border:2px solid #ddd;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+button.action-btn{
+width:100%;
+padding:16px;
+font-size:18px;
+border:none;
+border-radius:10px;
+background:#ff6b00;
+color:white;
+cursor:pointer;
+font-weight:700;
+}
+
+.history{
+margin-top:40px;
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.history h3{
+font-size:28px;
+margin-bottom:20px;
+}
+
+.history ul{
+list-style:none;
+}
+
+.history li{
+padding:14px 0;
+border-bottom:1px solid #eee;
+font-size:17px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.feature{
+background:white;
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.feature h3{
+font-size:24px;
+margin-bottom:15px;
+color:#ff6b00;
+}
+
+.feature p{
+font-size:17px;
+line-height:1.8;
+}
+
+footer{
+background:#ff6b00;
+color:white;
+text-align:center;
+padding:35px;
+font-size:17px;
+}
+
+@media(max-width:900px){
+
+.hero-content h1{
+font-size:45px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.actions{
+grid-template-columns:1fr;
+}
+
+.balance{
+font-size:50px;
+}
+
+.section-title{
+font-size:34px;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">FZ BANK</div>
+
+<ul>
+<li>Home</li>
+<li>Banking</li>
+<li>Services</li>
+<li>Contact</li>
+</ul>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Bank Smarter With FZ BANK</h1>
+<p>
+Experience secure digital banking with modern tools,
+instant transactions, and complete control of your finances.
+</p>
+<button>Open An Account</button>
+</div>
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Trusted By Thousands</h2>
+
+<div class="stats">
+
+<div class="stat-box">
+<h3>250K+</h3>
+<p>Active Customers</p>
+</div>
+
+<div class="stat-box">
+<h3>$50M+</h3>
+<p>Transactions Monthly</p>
+</div>
+
+<div class="stat-box">
+<h3>99.9%</h3>
+<p>Security Protection</p>
+</div>
+
+</div>
+
+<h2 class="section-title">Bank Dashboard</h2>
+
+<div class="balance-card">
+<h2>Current Balance</h2>
+<div class="balance" id="balance">$5000</div>
+</div>
+
+<div class="actions">
+
+<div class="card">
+<h3>Deposit Money</h3>
+<input type="number" id="deposit" placeholder="Enter Amount">
+<button class="action-btn" onclick="depositMoney()">Deposit</button>
+</div>
+
+<div class="card">
+<h3>Withdraw Money</h3>
+<input type="number" id="withdraw" placeholder="Enter Amount">
+<button class="action-btn" onclick="withdrawMoney()">Withdraw</button>
+</div>
+
+</div>
+
+<div class="history">
+<h3>Transaction History</h3>
+<ul id="history"></ul>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Why Choose FZ BANK</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Secure Banking</h3>
+<p>Advanced protection and secure access for every customer.</p>
+</div>
+
+<div class="feature">
+<h3>Fast Transfers</h3>
+<p>Move money instantly with a simple and reliable experience.</p>
+</div>
+
+<div class="feature">
+<h3>24/7 Support</h3>
+<p>Our support team is available whenever you need assistance.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 FZ BANK. All Rights Reserved.
+</footer>
+
+<script>
+let balance = 5000;
+
+function depositMoney(){
+
+let amount = Number(document.getElementById("deposit").value);
+
+if(amount > 0){
+
+balance = balance + amount;
+
+document.getElementById("balance").innerHTML = "$" + balance;
+
+document.getElementById("history").innerHTML =
+"<li>Deposited $" + amount + "</li>" +
+document.getElementById("history").innerHTML;
+
+}
+else{
+
+alert("Enter a valid amount");
+
+}
+
+}
+
+function withdrawMoney(){
+
+let amount = Number(document.getElementById("withdraw").value);
+
+if(amount > 0){
+
+if(amount <= balance){
+
+balance = balance - amount;
+
+document.getElementById("balance").innerHTML = "$" + balance;
+
+document.getElementById("history").innerHTML =
+"<li>Withdrawn $" + amount + "</li>" +
+document.getElementById("history").innerHTML;
+
+}
+else{
+
+alert("Insufficient balance");
+
+}
+
+}
+else{
+
+alert("Enter a valid amount");
+
+}
+
+}
+</script>
+
+</body>
+</html>
